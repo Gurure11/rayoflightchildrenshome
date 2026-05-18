@@ -94,6 +94,14 @@ border-radius:8px;
 text-decoration:none;
 display:inline-block;
 font-weight:bold;
+white-space:nowrap;
+}
+
+.hero-buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+align-items:center;
 }
 
 .hero{
@@ -140,7 +148,9 @@ padding:14px 28px;
 border-radius:8px;
 color:#fff;
 text-decoration:none;
-margin-left:10px;
+margin-left:0;
+white-space:nowrap;
+display:inline-block;
 }
 
 .features{
@@ -336,6 +346,66 @@ z-index:1000;
 color:#fff;
 }
 
+
+.animated-characters{
+position:absolute;
+inset:0;
+pointer-events:none;
+overflow:hidden;
+z-index:1;
+}
+
+.animated-character{
+position:absolute;
+font-size:34px;
+opacity:0.85;
+animation:floatCharacter 7s ease-in-out infinite;
+filter:drop-shadow(0 5px 10px rgba(0,0,0,0.28));
+}
+
+.animated-character.one{
+left:8%;
+top:22%;
+animation-delay:0s;
+}
+
+.animated-character.two{
+right:12%;
+top:28%;
+animation-delay:1.3s;
+}
+
+.animated-character.three{
+left:18%;
+bottom:18%;
+animation-delay:2.4s;
+}
+
+.animated-character.four{
+right:22%;
+bottom:16%;
+animation-delay:3.1s;
+}
+
+@keyframes floatCharacter{
+0%,100%{transform:translateY(0) rotate(0deg);}
+50%{transform:translateY(-18px) rotate(5deg);}
+}
+
+.sandra-email{
+display:block;
+margin-top:8px;
+font-weight:bold;
+color:#071739;
+word-break:break-word;
+}
+
+.sandra-email a{
+color:#071739;
+text-decoration:underline;
+}
+
+
 @media(max-width:900px){
 
 .topbar{
@@ -382,6 +452,18 @@ flex-direction:column;
 }
 
 @media(max-width:600px){
+
+.hero-buttons{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.hero-buttons .gold-btn,
+.hero-buttons .outline-btn{
+width:auto;
+max-width:100%;
+text-align:center;
+}
 
 .features{
 grid-template-columns:1fr;
@@ -571,6 +653,12 @@ font-size:32px;
 
 <section class="hero" id="home">
 <div class="overlay"></div>
+<div class="animated-characters" aria-hidden="true">
+<span class="animated-character one">☀️</span>
+<span class="animated-character two">💛</span>
+<span class="animated-character three">🎈</span>
+<span class="animated-character four">🌟</span>
+</div>
 <div class="hero-content">
 <h4>WELCOME TO RAY OF LIGHT CHILDREN'S CENTRE</h4>
 <h1>Giving Every Child<br>a Ray of <span>Hope</span></h1>
@@ -651,7 +739,7 @@ Today, the centre continues to respond to the growing needs of child-headed fami
 <img src="a9.jpeg">
 <img src="pat.jpeg"><p>Ms Patricia  Vutete Co-founder and Board  Chairperson.</p>
 <img src="a10.jpeg">
-  <img src="a14.jpeg"><p>Meet Ms Sandra Botha our Director of Donor  Engagement  and Child Advocacy.Ms Botha is responsible for administrative project work at Ray of Light Childrens' Center, is in regular contact with our project partners around the world. She requests reports, invoices and photos to verify the use of funds and maintains project list. </p>
+  <img src="a14.jpeg"><p>Meet Ms Sandra Botha our Director of Donor  Engagement  and Child Advocacy.Ms Botha is responsible for administrative project work at Ray of Light Childrens' Center, is in regular contact with our project partners around the world. She requests reports, invoices and photos to verify the use of funds and maintains project list. <span class="sandra-email">Cell: <a href="mailto:please-add-sandra-botha-email@example.com">+263716018887</a></span></p>
 </div>
 </section>
 
