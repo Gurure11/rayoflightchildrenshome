@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ray of Light Children's Centre in Glen Norah C, Harare, Zimbabwe bied onderwys, kos, klere, sorg en hoop aan weeskinders, kwesbare kinders en kindergeleide huishoudings. Word 'n vennoot, borg 'n kind of skenk vandag.">
+<meta name="keywords" content="Ray of Light Children's Centre, weeshuis Zimbabwe, kinderhuis Harare, skenk aan kinders Zimbabwe, borg 'n kind Zimbabwe, kwesbare kinders, kindergeleide gesinne, Glen Norah C, liefdadigheid Zimbabwe, PVO Zimbabwe">
+<meta name="author" content="Ray of Light Children's Centre">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071739">
+<meta property="og:title" content="Ray of Light Children's Centre | Gee Elke Kind 'n Straal Hoop">
+<meta property="og:description" content="Ondersteun onderwys, kos, klere en hoop vir weeskinders en kwesbare kinders in Harare, Zimbabwe.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+<meta property="og:locale" content="af_ZA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ray of Light Children's Centre">
+<meta name="twitter:description" content="Word 'n vennoot met Ray of Light Children's Centre om kwesbare kinders in Harare, Zimbabwe te ondersteun.">
+<meta name="twitter:image" content="logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Ray of Light Children's Centre",
+  "description": "'n Geregistreerde Private Vrywillige Organisasie wat weeskinders, kwesbare kinders en kindergeleide gesinne ondersteun deur onderwys, kos, klere en holistiese sorg.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Staannommer 8383, Glen Norah C",
+    "addressLocality": "Harare",
+    "addressCountry": "ZW"
+  },
+  "telephone": "+263772481502"
+}
+</script>
+
+<title>Ray of Light Children's Centre</title>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fff;
+color:#222;
+}
+
+.topbar{
+background:#071739;
+color:#fff;
+padding:12px 40px;
+display:flex;
+justify-content:space-between;
+font-size:14px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#fff;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+width:180px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#071739;
+font-weight:bold;
+}
+
+.donate-btn,.gold-btn{
+background:#d4af37;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+font-weight:bold;
+white-space:nowrap;
+}
+
+.hero-buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+align-items:center;
+}
+
+.hero{
+height:90vh;
+background:url('images/a1.jpeg') center/cover no-repeat;
+display:flex;
+align-items:center;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+color:#fff;
+max-width:700px;
+padding:60px;
+}
+
+.hero h1{
+font-size:72px;
+line-height:1.1;
+margin:15px 0;
+}
+
+.hero span{
+color:#d4af37;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.6;
+margin-bottom:25px;
+}
+
+.outline-btn{
+border:2px solid #fff;
+padding:14px 28px;
+border-radius:8px;
+color:#fff;
+text-decoration:none;
+margin-left:0;
+white-space:nowrap;
+display:inline-block;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+background:#071739;
+padding:50px;
+color:#fff;
+}
+
+.feature{
+text-align:center;
+}
+
+.feature i{
+font-size:40px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+padding:80px;
+align-items:center;
+}
+
+.about-image{
+width:100%;
+border-radius:20px;
+}
+
+.about-text h2{
+font-size:42px;
+margin-bottom:20px;
+color:#071739;
+}
+
+.about-text p{
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.bank-box{
+margin-top:25px;
+padding:25px;
+background:#071739;
+color:#fff;
+border-radius:15px;
+}
+
+.gallery{
+padding:80px 50px;
+background:#f5f5f5;
+}
+
+.gallery h2,.videos h2,.contact h2,.donation h2{
+text-align:center;
+font-size:42px;
+color:#071739;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.grid img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+transition:0.4s;
+}
+
+.grid img:hover{
+transform:scale(1.05);
+}
+
+.videos{
+padding:80px 50px;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+video{
+width:100%;
+max-width:420px;
+height:720px;
+object-fit:cover;
+border-radius:20px;
+transform:rotate(90deg);
+background:#000;
+margin:auto;
+display:block;
+}
+
+.video-grid{
+align-items:center;
+justify-items:center;
+row-gap:140px;
+padding-top:80px;
+padding-bottom:80px;
+}
+
+.donation{
+padding:80px 50px;
+background:#071739;
+text-align:center;
+color:#fff;
+}
+
+.donation p{
+max-width:700px;
+margin:20px auto;
+line-height:1.8;
+}
+
+.large-btn{
+margin-top:20px;
+}
+
+.contact{
+padding:80px 50px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-bottom:30px;
+}
+
+.whatsapp-btn,.call-btn{
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+color:#fff;
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+.call-btn{
+background:#071739;
+}
+
+.map iframe{
+width:100%;
+height:450px;
+border:none;
+border-radius:20px;
+}
+
+footer{
+background:#071739;
+color:#fff;
+text-align:center;
+padding:50px 20px;
+}
+
+.footer-logo{
+width:140px;
+margin-bottom:20px;
+}
+
+.floating-whatsapp{
+position:fixed;
+right:25px;
+bottom:25px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:36px;
+z-index:1000;
+}
+
+.floating-whatsapp a{
+color:#fff;
+}
+
+
+.animated-characters{
+position:absolute;
+inset:0;
+pointer-events:none;
+overflow:hidden;
+z-index:1;
+}
+
+.animated-character{
+position:absolute;
+font-size:34px;
+opacity:0.85;
+animation:floatCharacter 7s ease-in-out infinite;
+filter:drop-shadow(0 5px 10px rgba(0,0,0,0.28));
+}
+
+.animated-character.one{
+left:8%;
+top:22%;
+animation-delay:0s;
+}
+
+.animated-character.two{
+right:12%;
+top:28%;
+animation-delay:1.3s;
+}
+
+.animated-character.three{
+left:18%;
+bottom:18%;
+animation-delay:2.4s;
+}
+
+.animated-character.four{
+right:22%;
+bottom:16%;
+animation-delay:3.1s;
+}
+
+@keyframes floatCharacter{
+0%,100%{transform:translateY(0) rotate(0deg);}
+50%{transform:translateY(-18px) rotate(5deg);}
+}
+
+.sandra-email{
+display:block;
+margin-top:8px;
+font-weight:bold;
+color:#071739;
+word-break:break-word;
+}
+
+.sandra-email a{
+color:#071739;
+text-decoration:underline;
+}
+
+
+@media(max-width:900px){
+
+.topbar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero-content{
+padding:30px;
+}
+
+.features{
+grid-template-columns:1fr 1fr;
+}
+
+.about{
+grid-template-columns:1fr;
+padding:50px 25px;
+}
+
+.video-grid{
+grid-template-columns:1fr;
+}
+
+.contact-buttons{
+flex-direction:column;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-buttons{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.hero-buttons .gold-btn,
+.hero-buttons .outline-btn{
+width:auto;
+max-width:100%;
+text-align:center;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.hero{
+height:auto;
+padding:80px 0;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.gallery,.videos,.contact,.donation{
+padding:50px 20px;
+}
+
+}
+
+
+/* Updated EFT reveal button */
+.bank-box{
+background:transparent;
+padding:0;
+}
+
+.eft-toggle{
+width:100%;
+border:none;
+background:#d4af37;
+color:#fff;
+padding:16px 22px;
+border-radius:10px;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.eft-toggle:hover,
+.eft-toggle.active{
+background:#b89122;
+transform:translateY(-2px);
+}
+
+.eft-details{
+display:none;
+margin-top:18px;
+padding:25px;
+background:#071739;
+color:#fff;
+border-radius:15px;
+animation:fadeIn 0.4s ease;
+}
+
+.eft-details.show{
+display:block;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(10px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* History section */
+.history{
+padding:80px 50px;
+background:linear-gradient(135deg,#071739,#0b2558);
+color:#fff;
+}
+
+.history-card{
+max-width:1100px;
+margin:auto;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(212,175,55,0.35);
+border-radius:24px;
+padding:45px;
+box-shadow:0 20px 45px rgba(0,0,0,0.18);
+}
+
+.history-card h2{
+font-size:42px;
+color:#d4af37;
+margin-bottom:25px;
+text-align:center;
+}
+
+.history-card p{
+line-height:1.9;
+margin-bottom:18px;
+font-size:17px;
+}
+
+/* Contact form */
+.contact-form{
+max-width:850px;
+margin:30px auto;
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+border:1px solid rgba(7,23,57,0.08);
+}
+
+.form-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:16px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+margin-bottom:18px;
+}
+
+.contact-form textarea{
+height:150px;
+resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:#d4af37;
+box-shadow:0 0 0 3px rgba(212,175,55,0.18);
+}
+
+.contact-form button{
+background:#25D366;
+color:#fff;
+border:none;
+padding:16px 28px;
+border-radius:10px;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+}
+
+@media(max-width:700px){
+.form-row{
+grid-template-columns:1fr;
+gap:0;
+}
+
+.history{
+padding:50px 20px;
+}
+
+.history-card{
+padding:28px;
+}
+
+.history-card h2{
+font-size:32px;
+}
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<div class="topbar">
+<div><i class="fas fa-map-marker-alt"></i> Staannommer 8383, Glen Norah C, Harare, Zimbabwe</div>
+<div><i class="fas fa-phone"></i> +263 772 481 502</div>
+</div>
+
+<nav>
+<img src="logo.png" class="logo" alt="Ray of Light-logo">
+<ul>
+<li><a href="#home">Tuis</a></li>
+<li><a href="#about">Oor Ons</a></li>
+<li><a href="#history">Geskiedenis</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#videos">Video's</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+<a href="#" class="donate-btn">Skenk Nou</a>
+</nav>
+
+<section class="hero" id="home">
+<div class="overlay"></div>
+<div class="animated-characters" aria-hidden="true">
+<span class="animated-character one">☀️</span>
+<span class="animated-character two">💛</span>
+<span class="animated-character three">🎈</span>
+<span class="animated-character four">🌟</span>
+</div>
+<div class="hero-content">
+<h4>WELKOM BY RAY OF LIGHT CHILDREN'S CENTRE</h4>
+<h1>Gee Elke Kind<br>'n Straal van <span>Hoop</span></h1>
+<p>
+Ray of Light werk daaraan om betroubare, direkte en doeltreffende hulp aan kwesbare kinders te bied, in samewerking met vriende Catherine Robinson en haar oorlede man John onder leiding van die Katolieke priester Fr Nigel Johnson. Ray of Light Children's Centre het lewens verander deur onderwys, kos, klere en hoop.
+</p>
+<div class="hero-buttons">
+<a href="#" class="gold-btn">Skenk via PayPal</a>
+<a href="#about" class="outline-btn">Borg 'n Kind</a>
+</div>
+</div>
+</section>
+
+<section class="features">
+<div class="feature"><i class="fas fa-graduation-cap"></i><h3>Onderwys</h3><p>Help kinders om kwaliteit onderwys te kry.</p></div>
+<div class="feature"><i class="fas fa-utensils"></i><h3>Kos</h3><p>Voorsien daagliks voedsame maaltye.</p></div>
+<div class="feature"><i class="fas fa-shirt"></i><h3>Klere</h3><p>Ondersteun kinders met behoorlike klere.</p></div>
+<div class="feature"><i class="fas fa-heart"></i><h3>Hoop</h3><p>Bou helderder toekoms deur sorg en liefde.</p></div>
+</section>
+
+<section class="about" id="about">
+<div>
+<img src="a4.jpeg" class="about-image" alt="Kinders by Ray of Light">
+</div>
+<div class="about-text">
+<h2>Oor Ray of Light</h2>
+<p>
+Ray of Light Children's Centre is 'n geregistreerde Private Vrywillige Organisasie wat in 2011 gestig is om holistiese sorg en ondersteuning aan weeskinders en kwesbare kinders te bied.
+</p>
+<p>
+Die organisasie het kinders gehelp om toegang tot onderwys, voedsame kos, klere en emosionele ondersteuning te kry. Sommige begunstigdes het tersiêre onderwys ontvang.
+</p>
+<p>
+Die sentrum fokus nou op die ondersteuning van kindergeleide gesinne wat geraak word deur armoede, migrasie, MIV/VIGS en die impak van COVID-19.
+</p>
+<div class="bank-box">
+<button class="eft-toggle" type="button" onclick="toggleEFT(this)">
+<i class="fas fa-building-columns"></i> Doen nou 'n EFO
+</button>
+<div class="eft-details">
+<h3>Ondersteun deur EFO</h3>
+<p><strong>NMB Bank (Joiner City)</strong></p>
+<p>Rekeningnaam: Ray of Light</p>
+<p>Rekeningnommer: 09503764802001</p>
+<p>(Joiner City) Takkode: 11101</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="history" id="history">
+<div class="history-card">
+<h2>Geskiedenis van die Weeshuis</h2>
+<p>
+Ray of Light Children's Centre is in 2011 gestig deur Patricia Vutete en Constantino Chapeta, met die hulp van Catherine Robinson en haar oorlede man John. Die projek is geïmplementeer onder leiding van Fr Nigel Johnson, wie se leiding gehelp het om die sentrum se vroeë missie van sorg, waardigheid en hoop te vorm.
+</p>
+<p>
+Deur die jare het Ray of Light weeskinders en kwesbare kinders ondersteun deur hulle toegang te gee tot onderwys, voedsame kos, behoorlike klere en emosionele ondersteuning. Die werk het deure oopgemaak vir baie kinders, insluitend sommige wat later tersiêre onderwys kon volg.
+</p>
+<p>
+Vandag reageer die sentrum steeds op die groeiende behoeftes van kindergeleide gesinne, wat kinders praktiese hulp en 'n pad na 'n veiliger, helderder toekoms bied.
+</p>
+</div>
+</section>
+
+<section class="gallery" id="gallery">
+<h2>Kindergallery</h2>
+<div class="grid">
+<img src="a1.jpeg" alt="Kind by Ray of Light">
+<img src="a2.jpeg" alt="Kinders saam">
+<img src="a3.jpeg" alt="Aktiwiteit by die sentrum">
+<img src="a4.jpeg" alt="Groepfoto">
+<img src="a5.jpeg" alt="Kind lag">
+<img src="a6.jpeg" alt="Studente">
+<img src="a7.jpeg" alt="Ete tyd">
+<img src="a8.jpeg" alt="Speeltyd">
+<img src="a9.jpeg" alt="Ondersteuning">
+<img src="pat.jpeg" alt="Me Patricia Vutete"><p>Me Patricia Vutete, Medestigter en Voorsitter van die Raad.</p>
+<img src="a10.jpeg" alt="Nog 'n beeld">
+<img src="a14.jpeg" alt="Me Sandra Botha"><p>Ontmoet Me Sandra Botha, ons Direkteur van Skenkersbetrokkenheid en Kinderbelangbehartiging. Me Botha is verantwoordelik vir administratiewe projekwerk by Ray of Light Children's Centre, is in gereelde kontak met ons projekvennote regoor die wêreld. Sy versoek verslae, fakture en foto's om die gebruik van fondse te verifieer en hou die projeklys by. <span class="sandra-email">Sel: <a href="tel:+263716018887">+263716018887</a></span></p>
+</div>
+</section>
+
+<section class="videos" id="videos">
+<h2>Ons Video's</h2>
+<div class="video-grid">
+<video controls>
+<source src="a12.mp4" type="video/mp4">
+U blaaier ondersteun nie die video-etiket nie.
+</video>
+<video controls>
+<source src="a13.mp4" type="video/mp4">
+U blaaier ondersteun nie die video-etiket nie.
+</video>
+</div>
+</section>
+
+<section class="donation">
+<h2>Word 'n Vennoot in die Verandering van Lewens</h2>
+<p>Welwillendes en borge word verwelkom om te skenk en die toekoms van kwesbare kinders te ondersteun.</p>
+<a href="#" class="gold-btn large-btn">Voeg PayPal-skenkingskakel hier in</a>
+</section>
+
+<section class="contact" id="contact">
+<h2>Kontak Ons</h2>
+<div class="contact-buttons">
+<a href="https://wa.me/263772481502" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp Ons</a>
+<a href="tel:+263772481502" class="call-btn"><i class="fas fa-phone"></i> Bel Ons</a>
+</div>
+
+<form class="contact-form" onsubmit="sendWhatsAppMessage(event)">
+<div class="form-row">
+<input type="text" id="contactName" placeholder="U Naam" required>
+<input type="tel" id="contactNumber" placeholder="U Kontaknommer" required>
+</div>
+<textarea id="contactMessage" placeholder="Skryf u boodskap hier..." required></textarea>
+<button type="submit"><i class="fab fa-whatsapp"></i> Stuur Boodskap op WhatsApp</button>
+</form>
+
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=Glen%20Norah%20C%20Harare&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Ligging van Ray of Light Children's Centre"></iframe>
+</div>
+</section>
+
+<footer>
+<img src="logo.png" class="footer-logo" alt="Ray of Light-logo">
+<p>Staannommer 8383, Glen Norah C, Harare, Zimbabwe</p>
+<p>WhatsApp: +263 772 481 502</p>
+<p>© 2026 Ray of Light Children's Centre</p>
+</footer>
+
+<div class="floating-whatsapp">
+<a href="https://wa.me/263772481502" aria-label="Kontak ons op WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<script>
+function toggleEFT(button){
+  const details = button.nextElementSibling;
+  details.classList.toggle('show');
+  button.classList.toggle('active');
+}
+
+function sendWhatsAppMessage(event){
+  event.preventDefault();
+  const name = document.getElementById('contactName').value.trim();
+  const number = document.getElementById('contactNumber').value.trim();
+  const message = document.getElementById('contactMessage').value.trim();
+  const text = `Hallo Ray of Light Children's Centre, my naam is ${name}. My kontaknommer is ${number}. ${message}`;
+  window.open(`https://wa.me/263772481502?text=${encodeURIComponent(text)}`, '_blank');
+}
+</script>
+
+</body>
+</html>
